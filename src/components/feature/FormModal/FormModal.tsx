@@ -81,7 +81,7 @@ const FormModal = () => {
                                     type='submit'
                                     isLoading={loading}
                                     loadingText="Submit"
-                                    colorScheme='red'
+                                    {...isDeleteMode && ({ colorScheme: 'red' })}
                                     borderRadius={4}>
                                     {buttonText}
                                 </Button>
